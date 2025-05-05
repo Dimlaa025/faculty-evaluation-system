@@ -45,6 +45,15 @@ header {
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
 
+.project4{
+  width: 700;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+
 .project3{
   width: 700;
   height: 200px;
