@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #eef2f3, #8e9eab);
+  color: #2c3e50;
+  padding: 40px 20px;
+}
+
+header {
+  background: #34495e;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  padding: 30px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: left;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.project1{
+  width: 700;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.project3{
+  width: 700;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.header-text h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.header-text h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+.navbar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  background: #2980b9;
+  color: #fff;
+}
+
+
+section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+section h3 {
+  font-size: 1.6rem;
+  color: #2980b9;
+  margin-bottom: 15px;
+}
+
+section p,
+section li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+ul {
+  list-style: circle;
+  padding-left: 25px;
+}
+
+
+footer {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  margin-top: 40px;
+  padding: 20px;
+}

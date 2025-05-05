@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faculty Evaluation Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img src="logo.png" alt="WUP Logo" class="logo"/>
+      <h1>Designing an Online Faculty Performance Evaluation System</h1>
+      <p>With Data Analytics for BSIT CECT, Wesleyan University-Philippines</p>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="chapters.html">Chapters</a></li>
+        <li><a href="evaluation.html">Evaluation</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+<section class="section card">
+  <div class="container">
+    <h2>Faculty Evaluation Form</h2>
+    <form id="evaluationForm" class="evaluation-form">
+      <fieldset>
+        <legend>👤 Student Information</legend>
+        <label for="studentName">Full Name</label>
+        <input type="text" id="studentName" name="studentName" required />
+
+        <label for="course">Course / Subject</label>
+        <input type="text" id="course" name="course" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>👨‍🏫 Professor Evaluation</legend>
+        <label for="professor">Professor</label>
+        <select id="professor" name="professor" required>
+          <option value="">-- Select a Professor --</option>
+          <option>Prof. Santos</option>
+          <option>Prof. Dela Cruz</option>
+          <option>Prof. Villanueva</option>
+        </select>
+
+        <h4>Answer the following:</h4>
+        <label>1. Does the professor arrive and end the class on time?</label>
+        <select name="timeliness" required>
+          <option value="">-- Select --</option>
+          <option>Always</option>
+          <option>Often</option>
+          <option>Sometimes</option>
+          <option>Never</option>
+        </select>
+
+        <label>2. Does the professor start the class with a prayer or devotion?</label>
+        <select name="prayerStart" required>
+          <option value="">-- Select --</option>
+          <option>Always</option>
+          <option>Often</option>
+          <option>Sometimes</option>
+          <option>Never</option>
+        </select>
+
+        <label>3. Is the professor prepared with lessons and materials?</label>
+        <select name="preparedness" required>
+          <option value="">-- Select --</option>
+          <option>Very Prepared</option>
+          <option>Prepared</option>
+          <option>Unprepared</option>
+        </select>
+
+        <label>4. How would you rate the professor’s teaching clarity?</label>
+        <select name="clarity" required>
+          <option value="">-- Select --</option>
+          <option>Excellent</option>
+          <option>Good</option>
+          <option>Fair</option>
+          <option>Poor</option>
+        </select>
+
+        <label>5. Does the professor treat students respectfully and fairly?</label>
+        <select name="respect" required>
+          <option value="">-- Select --</option>
+          <option>Always</option>
+          <option>Often</option>
+          <option>Sometimes</option>
+          <option>Never</option>
+        </select>
+
+        <label>6. Is the professor available for consultation outside class hours?</label>
+        <select name="availability" required>
+          <option value="">-- Select --</option>
+          <option>Always</option>
+          <option>Sometimes</option>
+          <option>Rarely</option>
+          <option>Never</option>
+        </select>
+
+        <label>Additional Comments</label>
+        <textarea name="comments" rows="4" placeholder="Your feedback..."></textarea>
+      </fieldset>
+
+      <button type="submit" class="btn">Submit Evaluation</button>
+      <p id="thankYouMsg" style="display:none; color:green; margin-top:15px;">✅ Thank you for your feedback!</p>
+    </form>
+  </div>
+</section>
+<script>
+  document.getElementById("evaluationForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    document.getElementById("thankYouMsg").style.display = "block";
+    this.reset();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Faculty Evaluation System | Wesleyan University-Philippines</p>
+    </div>
+  </footer>
+</body>
+</html>
